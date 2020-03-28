@@ -1,0 +1,21 @@
+
+.banner{
+    background-image:url("./images/banner.png")!important;
+    background-size:auto 100%;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+.text-banner{
+    font-weight:bolder!important;
+    color:white;
+}
+.banner-heading{
+    color:white;
+    text-shadow:1px 2px 5px black;
+    
+}
+.banner-title{
+    color:white;
+    text-shadow:1px 2px 5px black;
+    margin-left:20px;
+}
