@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Viewer({title,image,count}) {
+function Viewer({title,image,count,wide}) {
     
     return (
 
@@ -14,7 +14,7 @@ function Viewer({title,image,count}) {
       <div className="card-body">
         <h5 className="card-title h3">{title}</h5>
         <p className="card-text display-4">{count}</p>
-        <p className="card-text"><small className="text-muted">World Wide</small></p>
+        <p className="card-text"><small className="text-muted">{wide}</small></p>
       </div>
     </div>
   </div>

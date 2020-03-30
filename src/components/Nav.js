@@ -16,21 +16,20 @@ function Nav() {
             <li className="nav-item active">
             <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
             </li>
+
+            <li className="nav-item active">
+            <Link className="nav-link" to="/india">Indian <span className="sr-only">(current)</span></Link>
+            </li>
+            <li className="nav-item active">
+            <Link className="nav-link" to="/official">Official Sources <span className="sr-only">(current)</span></Link>
+            </li>
             
-        <li class="nav-item dropdown">
-            <span class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             India
-            </span>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <Link className="dropdown-item" to="/india">India</Link>
-                <Link className="dropdown-item" to="/official">From Official Sources</Link>
-                <Link className="dropdown-item" to="/testing">ICMR Testing History</Link>
-            
-            </div>
-        </li>
-            
-            
-            
+            <li className="nav-item active">
+            <Link className="nav-link" to="/testing">Testing History <span className="sr-only">(current)</span></Link>
+            </li>
+            <li className="nav-item active">
+            <Link className="nav-link" to="/summary">Summary<span className="sr-only">(current)</span></Link>
+            </li>
         </ul>
     </div>
     </div>

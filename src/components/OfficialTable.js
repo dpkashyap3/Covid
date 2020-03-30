@@ -1,22 +1,14 @@
-import React,{useState} from 'react'
-
+import React from 'react'
+import Search from "./SearchOfficial"
 
 function OfficialTable({region}) {
     
-const [input, setinput] = useState("")
-
-
     return (    
 <div className="row mt-5 table-responsive">
      <h2 className="banner-heading h1 ml-5">India Official Information Statewise</h2>
     <hr/>
 
-     <form className="form-inline ml-5">
-        <div className="form-group mx-sm-3 mb-2">
-        <input type="text" className="form-control-lg" placeholder="Search...." onChange={(e)=>setinput(e.target.value)}/>
-        </div>
-        <button type="submit" className="btn btn-primary btn-lg mb-2">Search</button>
-    </form>
+     <Search region={region}/>
 
     <hr/>
 

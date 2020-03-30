@@ -5,6 +5,7 @@ import Recover from "./images/recover.png"
 import Dead from "./images/rip.png"
 import Native from "./images/nativecase.png"
 import Forign from "./images/foreign.png"
+import Treatment from "./images/treatment.png"
 import Viewer from "./Viewer"
 import Table from "./OfficialTable"
 
@@ -23,7 +24,9 @@ useEffect(()=>{
 
 return (
 <div className="container">
+<br/>
 <h1 className="banner-heading display-4">India Official Information</h1>
+<hr/>
 <div className="row">
 
 
@@ -33,6 +36,7 @@ return (
 <Viewer title={"Total Death"} image={Dead} count={data.deaths}/>
 <Viewer title={"Indian Cases"} image={Native} count={data.confirmedCasesIndian}/>
 <Viewer title={"Foreign Cases"} image={Forign} count={data.confirmedCasesForeign}/>
+<Viewer title={"Treatments"} image={Treatment} count={data.total-data.discharged}/>
 <Table region={region}/>
 
 

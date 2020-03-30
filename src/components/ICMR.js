@@ -26,9 +26,9 @@ function ICMR() {
     </tr>
     </thead>
     <tbody>
-    {data.map(item=>{
+    {data.map((item,i)=>{
         return(
-    <tr>
+    <tr key={i}>
       <td><b><i>{item.timestamp}</i></b></td>
       <td><i>{item.totalSamplesTested}</i></td>
       <td><i>{item.totalIndividualsTested}</i></td>

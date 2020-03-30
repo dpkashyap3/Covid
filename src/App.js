@@ -5,6 +5,7 @@ import Summary from "./components/Summary"
 import India from "./components/India"
 import Official from "./components/Official"
 import Testing from "./components/ICMR"
+import Fetch from "./components/Breakdown/Fetch"
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom"
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route path="/india" component={India}/>
       <Route path="/official" component={Official}/>
       <Route path="/testing" component={Testing}/>
+      <Route path="/summary" component={Fetch}/>
       </Switch>
     </div>
     </Router>

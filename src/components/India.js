@@ -6,6 +6,7 @@ import Dead from "./images/rip.png"
 import Serious from "./images/serious.png"
 import New from "./images/new.png"
 import Treatment from "./images/treatment.png"
+import NewDead from "./images/newdead.png"
 import Viewer from "./Viewer"
 
 function Summary() {
@@ -24,13 +25,13 @@ return (
 <h1 className="banner-heading display-4">India Information</h1>
 <div className="row">
 
-<Viewer title={"Total Case"} image={Total} count={data.total_cases}/>
-<Viewer title={"Recovered"} image={Recover} count={data.total_recovered}/>
-<Viewer title={"Total Death"} image={Dead} count={data.total_deaths}/>
-<Viewer title={"New Cases"} image={New} count={data.total_new_cases_today}/>
-<Viewer title={"New Deaths"} image={Dead} count={data.total_new_deaths_today}/>
-<Viewer title={"Serious Case"} image={Serious} count={data.total_serious_cases}/>
-<Viewer title={"Treatments"} image={Treatment} count={data.total_active_cases}/>
+<Viewer title={"Total Case"} image={Total} count={data.total_cases} wide={"Indian Official Data"}/>
+<Viewer title={"Recovered"} image={Recover} count={data.total_recovered} wide={"Indian Official Data"}/>
+<Viewer title={"Total Death"} image={Dead} count={data.total_deaths} wide={"Indian Official Data"}/>
+<Viewer title={"New Cases"} image={New} count={data.total_new_cases_today} wide={"Indian Official Data"}/>
+<Viewer title={"New Deaths"} image={NewDead} count={data.total_new_deaths_today} wide={"Indian Official Data"}/>
+<Viewer title={"Serious Case"} image={Serious} count={data.total_serious_cases} wide={"Indian Official Data"}/>
+<Viewer title={"Treatments"} image={Treatment} count={data.total_active_cases} wide={"Indian Official Data"}/>
 
 </div>
 </div>
