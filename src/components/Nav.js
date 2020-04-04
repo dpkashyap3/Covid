@@ -14,21 +14,21 @@ function Nav() {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-            <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
+            <Link className="nav-link" to="/covid">Home <span className="sr-only">(current)</span></Link>
             </li>
 
             <li className="nav-item active">
-            <Link className="nav-link" to="/india">Indian <span className="sr-only">(current)</span></Link>
+            <Link className="nav-link" to="/covid/india">Indian <span className="sr-only">(current)</span></Link>
             </li>
             <li className="nav-item active">
-            <Link className="nav-link" to="/official">Official Sources <span className="sr-only">(current)</span></Link>
+            <Link className="nav-link" to="/covid/official">Official Sources <span className="sr-only">(current)</span></Link>
             </li>
             
             <li className="nav-item active">
-            <Link className="nav-link" to="/testing">Testing History <span className="sr-only">(current)</span></Link>
+            <Link className="nav-link" to="/covid/testing">Testing History <span className="sr-only">(current)</span></Link>
             </li>
             <li className="nav-item active">
-            <Link className="nav-link" to="/summary">Summary<span className="sr-only">(current)</span></Link>
+            <Link className="nav-link" to="/covid/summary">Summary<span className="sr-only">(current)</span></Link>
             </li>
         </ul>
     </div>

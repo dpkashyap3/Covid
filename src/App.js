@@ -16,11 +16,11 @@ function App() {
     <div className="bg-secondary">
       <Main/>
       <Switch>
-      <Route path="/" exact component={Summary}/>
-      <Route path="/india" component={India}/>
-      <Route path="/official" component={Official}/>
-      <Route path="/testing" component={Testing}/>
-      <Route path="/summary" component={Fetch}/>
+      <Route path="/covid" exact component={Summary}/>
+      <Route path="/covid/india" component={India}/>
+      <Route path="/covid/official" component={Official}/>
+      <Route path="/covid/testing" component={Testing}/>
+      <Route path="/covid/summary" component={Fetch}/>
       </Switch>
       <Footer/>
     </div>
