@@ -66,21 +66,22 @@ function Fetch() {
         </div>
     </div>
 
-    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-3">
     <form class="form-inline">
         <div class="form-group ">
-            <input type="text" className="form-control form-control-lg mr-2" placeholder="Enter Date (DD/MM/YYYY)" value={date} onChange={(e)=>setdate(e.target.value)}/>
+            <input type="text" className="form-control form-control mr-2" placeholder="Enter Date (DD/MM/YYYY)" value={date} onChange={(e)=>setdate(e.target.value)}/>
+            <button type="submit" className="btn btn-warning ml-2" onClick={dateWise}>Go..</button>
         </div>
-        <button type="submit" className="btn btn-warning" onClick={dateWise}>Go..</button>
+        
     </form>
     </div>
 
-    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-3">
      <form class="form-inline">
         <div class="form-group">
-            <input type="text" className="form-control form-control-lg mr-2" placeholder="Enter State Name" onChange={(e)=>setcity(e.target.value)}/>
+            <input type="text" className="form-control form-control mr-2" placeholder="Enter State Name" onChange={(e)=>setcity(e.target.value)}/>
         </div>
-        <button type="submit" className="btn btn-warning" onClick={cityWise}>Go..</button>
+        <button type="submit" className="btn btn-warning ml-2" onClick={cityWise}>Go..</button>
      </form>
     </div>
 
