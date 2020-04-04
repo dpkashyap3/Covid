@@ -1,6 +1,6 @@
 import React from 'react'
 import Search from "./SearchOfficial"
-
+import StateGraph from "../../Chart/StateGraph"
 function OfficialTable({region}) {
     
     return (    
@@ -11,8 +11,9 @@ function OfficialTable({region}) {
      <Search region={region}/>
 
     <hr/>
-
-    <table class="table table-hover table-secondary m-3" style={{fontSize:"13px"}}>
+    <div className="row">
+    <div className="col-lg-12 col-md-12 col-sm-12">
+    <table class="table table-hover table-dark text-white m-3" style={{fontSize:"13px"}}>
     <thead>
     <tr>
       <th scope="col">State</th>
@@ -31,9 +32,9 @@ function OfficialTable({region}) {
         <td><b><i>{item.loc}</i></b></td>
          <td><b>{item.confirmedCasesIndian}</b></td>
          <td><b>{item.confirmedCasesForeign}</b></td>
-         <td><b>{item.confirmedCasesIndian+item.confirmedCasesForeign}</b></td>
-         <td><b>{item.discharged}</b></td>
-         <td><b>{item.deaths}</b></td>
+         <td className="text-warning"><b>{item.confirmedCasesIndian+item.confirmedCasesForeign}</b></td>
+         <td className="text-success"><b>{item.discharged}</b></td>
+         <td className="text-danger"><b>{item.deaths}</b></td>
     </tr>
         )})
    
@@ -42,8 +43,14 @@ function OfficialTable({region}) {
     
   </tbody>
 </table>
+</div>
+{
+<div className="col-lg-12 col-md-12 col-sm-12">
+<StateGraph data={region}/>
 </div> 
-        
+}
+</div>
+</div>  
     )
 }
 

@@ -1,20 +1,23 @@
 import React,{useState,useEffect} from 'react'
 import axios from "axios"
-import Total from "./images/total.png"
-import Recover from "./images/recover.png"
-import Dead from "./images/rip.png"
-import Serious from "./images/serious.png"
-import New from "./images/new.png"
-import Treatment from "./images/treatment.png"
-import NewDead from "./images/newdead.png"
-import Viewer from "./Viewer"
+import Total from "../../components/images/total.png"
+import Recover from "../../components/images/recover.png"
+import Dead from "../../components/images/rip.png"
+import Serious from "../../components/images/serious.png"
+import New from "../../components/images/new.png"
+import Treatment from "../../components/images/treatment.png"
+import NewDead from "../../components/images/newdead.png"
+import Viewer from "../../components/Viewer"
+import IndiaPie from "../../Chart/IndiaPie"
+
+
 
 function Summary() {
 
 const [data, setdata] = useState([])
 
 useEffect(()=>{
-  axios.get("https://thevirustracker.com/free-api?countryTotal=IN")
+  axios.get("https://api.thevirustracker.com/free-api?countryTotal=IN")
   .then(response=>{
     setdata(response.data.countrydata[0])
   })
@@ -32,8 +35,9 @@ return (
 <Viewer title={"New Deaths"} image={NewDead} count={data.total_new_deaths_today} wide={"Indian Official Data"}/>
 <Viewer title={"Serious Case"} image={Serious} count={data.total_serious_cases} wide={"Indian Official Data"}/>
 <Viewer title={"Treatments"} image={Treatment} count={data.total_active_cases} wide={"Indian Official Data"}/>
-
 </div>
+<IndiaPie chart={data}/>
+
 </div>
 
     )

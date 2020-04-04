@@ -8,18 +8,18 @@ import Serious from "./images/serious.png"
 import New from "./images/new.png"
 import Treatment from "./images/treatment.png"
 import Viewer from "./Viewer"
-
+import Chart from "../Chart/WorldPie"
 function Summary() {
 
 const [data, setdata] = useState([])
 
 useEffect(()=>{
-  axios.get("https://thevirustracker.com/free-api?global=stats")
+  axios.get("https://api.thevirustracker.com/free-api?global=stats")
   .then(response=>{
-    setdata(response.data.results[0])
-    
-  })
+    setdata(response.data.results[0]) 
+  });
 },[])
+
 
 return (
 <div className="container">
@@ -40,6 +40,9 @@ return (
 
 <Viewer title={"Treatments"} image={Treatment} count={data.total_unresolved} wide={"World Data"}/>
 </div>
+
+<Chart chart={data}/>
+
 </div>
 
     )

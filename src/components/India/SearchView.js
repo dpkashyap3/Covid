@@ -1,11 +1,11 @@
 import React from 'react'
-import Total from "./images/total.png"
-import Recover from "./images/recover.png"
-import Dead from "./images/rip.png"
-import Native from "./images/nativecase.png"
-import Forign from "./images/foreign.png"
-import Treatment from "./images/treatment.png"
-import Viewer from "./Viewer"
+import Total from "../images/total.png"
+import Recover from "../images/recover.png"
+import Dead from "../images/rip.png"
+import Native from "../images/nativecase.png"
+import Forign from "../images/foreign.png"
+import Treatment from "../images/treatment.png"
+import Viewer from "../Viewer"
 import Modal from "react-modal"
 
 function SearchView({data,ismodal,setismodal}) {
